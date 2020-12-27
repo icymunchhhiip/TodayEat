@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="divider_max">40</integer>
+    <integer name="divider_min">1</integer>
+    <integer name="divider_interval">10</integer>
+</resources>

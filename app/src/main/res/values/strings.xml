@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TodayEat</string>
+    <string name="kakao">c85ba9762a7c89d99dfbd26687b1ebb8</string>
+    <string name="naver">m5yto5cy4p</string>
+    <string name="tmap">l7xx63ba66e222ac4b8dbaeaf28f687ae591</string>
+
+    <string name="search">검색</string>
+    <string name="exclusion_list">제외 목록</string>
+    <string name="user">사용자</string>
+    
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="enter_address">현재 주소를 입력해주세요</string>
+    <string name="km">km</string>
+    <string name="radius">검색 반경</string>
+
+    <string name="food_korean">한식</string>
+    <string name="food_chinese">중식</string>
+    <string name="food_japanese">일식</string>
+    <string name="food_western">양식</string>
+    <string name="food_flour_based">분식</string>
+
+    <string name="user_location">내 위치</string>
+
+    <string name="except">이 음식점을 제외 목록에 추가</string>
+    <string name="uri_search_base">https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=</string>
+    <string name="uri_route_kakao">kakaomap://route?sp=%s,%s&amp;ep=%s,%s&amp;by=PUBLICTRANSIT</string>
+    <string name="uri_route_tamp">tmap://route?goalx=%s&amp;goaly=%s&amp;goalname=%s</string>
+    <string name="uri_route_google">http://maps.google.com/maps?saddr=%s,%s&amp;daddr=%s,%s</string>
+    <string name="uri_a_beer">https://donaricano.com/mypage/1572263164_fWkHvr</string>
+
+    <string name="login_need">로그인 필요 서비스</string>
+    <string name="login_fail">로그인을 실패하였습니다</string>
+    <string name="login_success">로그인을 성공하였습니다</string>
+    <string name="login_info_fail">사용자 정보를 불러올 수 없습니다</string>
+    <string name="logout_success">로그아웃을 성공하였습니다</string>
+    <string name="unlink_success">회원탈퇴를 성공하였습니다</string>
+    <string name="unlink_fail">회원탈퇴를 실패하였습니다</string>
+    <string name="session_closed">로그인 후 다시 시도해주세요</string>
+
+    <string name="a_beer">후원하기</string>
+    <string name="logout">로그아웃</string>
+    <string name="unlink">회원탈퇴</string>
+</resources>

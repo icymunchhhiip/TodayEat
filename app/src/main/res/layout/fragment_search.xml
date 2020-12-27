@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".search.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:background="@drawable/search_bg"
+            android:elevation="2dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@id/ib_my_location"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="@string/enter_address"
+                android:padding="10dp"
+                android:textColor="@color/colorFontDark"
+                android:textColorHint="@color/colorFontLight"
+                android:textSize="@dimen/font_middle" />
+
+            <ImageButton
+                android:id="@+id/ib_my_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_location"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_my_location_24" />
+        </RelativeLayout>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/layout_foods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            app:flexWrap="wrap"
+            app:justifyContent="space_evenly">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cb_korean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/condition"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:minWidth="@dimen/checkbox_min_width"
+                    android:text="@string/food_korean"
+                    android:textColor="@color/condition"
+                    android:textSize="@dimen/font_middle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cb_chinese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/condition"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:minWidth="@dimen/checkbox_min_width"
+                    android:text="@string/food_chinese"
+                    android:textColor="@color/condition"
+                    android:textSize="@dimen/font_middle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cb_japanese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/condition"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:minWidth="@dimen/checkbox_min_width"
+                    android:text="@string/food_japanese"
+                    android:textColor="@color/condition"
+                    android:textSize="@dimen/font_middle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cb_western"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/condition"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:minWidth="@dimen/checkbox_min_width"
+                    android:text="@string/food_western"
+                    android:textColor="@color/condition"
+                    android:textSize="@dimen/font_middle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cb_flour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/condition"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:minWidth="@dimen/checkbox_min_width"
+                    android:text="@string/food_flour_based"
+                    android:textColor="@color/condition"
+                    android:textSize="@dimen/font_middle" />
+            </LinearLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="@dimen/page_padding">
+
+            <com.jaygoo.widget.RangeSeekBar
+                android:id="@+id/rsb_radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                app:rsb_gravity="bottom"
+                app:rsb_indicator_arrow_size="5dp"
+                app:rsb_indicator_background_color="@color/colorAccent"
+                app:rsb_indicator_padding_bottom="5dp"
+                app:rsb_indicator_padding_left="5dp"
+                app:rsb_indicator_padding_right="5dp"
+                app:rsb_indicator_padding_top="5dp"
+                app:rsb_indicator_show_mode="alwaysShow"
+                app:rsb_indicator_text_size="@dimen/font_middle"
+                app:rsb_max="@integer/divider_max"
+                app:rsb_min="@integer/divider_min"
+                app:rsb_mode="single"
+                app:rsb_progress_color="@color/colorAccent"
+                app:rsb_progress_default_color="#FEDBCD"
+                app:rsb_step_auto_bonding="true"
+                app:rsb_step_color="@color/colorAccent"
+                app:rsb_step_height="10dp"
+                app:rsb_step_radius="5dp"
+                app:rsb_step_width="10dp"
+                app:rsb_steps="8"
+                app:rsb_thumb_drawable="@drawable/thumb"
+                app:rsb_thumb_height="18dp"
+                app:rsb_thumb_scale_ratio="1.25"
+                app:rsb_thumb_width="18dp"
+                app:rsb_tick_mark_mode="other"
+                app:rsb_tick_mark_text_array="@array/seek_mark"
+                app:rsb_tick_mark_text_color="@android:color/darker_gray"
+                app:rsb_tick_mark_text_margin="15dp"
+                app:rsb_tick_mark_text_size="@dimen/font_small" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-6dp"
+            android:backgroundTint="@android:color/white"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorAccent"
+            android:max="100"
+            android:paddingBottom="-8dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.naver.maps.map.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bt_except" />
+
+            <LinearLayout
+                android:id="@+id/ll_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/map"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_maps"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/ib_kakao_map"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_kakao" />
+
+                <ImageButton
+                    android:id="@+id/ib_tmap"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_tmap" />
+
+                <ImageButton
+                    android:id="@+id/ib_google_map"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_google" />
+
+                <ImageButton
+                    android:id="@+id/ib_call"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_call_24"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_except"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/except"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_middle"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

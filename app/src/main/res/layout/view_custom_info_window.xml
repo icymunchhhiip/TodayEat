@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- TODO: 글자 스타일과 크기 .. 종류버튼 참고-->
+
+    <!-- TODO: 안쓰는 drawable 지우기 -->
+
+    <!-- TODO: map 관련 -->
+    <!-- TODO: 마커 모양 -->
+    <!-- TODO: 마커 밑 글자 스타일 -->
+
+    <!-- TODO: 검색액티비티 관련 -->
+    <!-- TODO: 검색 액티비티의 list, edittext 글자 스타일과 크기 -->
+
+    <!-- TODO: 반경 관련 -->
+    <!-- TODO: 주소입력tv 글자 스타일과 크기 -->
+    <!-- TODO: "km",선택된 반경 글자 스타일과 크기 -->
+    <!-- TODO: tick의 글자 스타일(과 크기?) -->
+
+    <!-- TODO: 하단바 관련 -->
+    <!-- TODO: 하단바 글자 스타일(과 크기?) -->
+    <!-- TODO: 하단바 스타일(디자인) -->
+    <!-- TODO: 사용자탭 지우기 -->
+
+    <!-- TODO: 색상 관련 -->
+    <!-- TODO: 색상 글자나 아이콘 등 전체적으로 검토토 -->
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        android:maxWidth="225dp"
+        android:textColor="@color/colorFontDark"
+        android:textSize="@dimen/font_small"
+        tools:text="이름" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rb_point"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_24" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:fontFamily="@font/roboto_regular"
+            android:maxWidth="225dp"
+            android:text="정보 없음"
+            android:textColor="@color/colorFontLight"
+            android:textSize="@dimen/font_middle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_additional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:maxWidth="225dp"
+        android:text="추가 정보 없음"
+        android:textColor="@color/colorFontLight"
+        android:textSize="@dimen/font_middle" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:maxWidth="225dp"
+        android:text="설명 없음"
+        android:textSize="@dimen/font_middle"
+        android:textColor="@color/colorFontLight"/>
+</LinearLayout>

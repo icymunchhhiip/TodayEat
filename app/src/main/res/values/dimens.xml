@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="no_dp">0dp</dimen>
+    <dimen name="pager_padding">4dp</dimen>
+    <dimen name="page_padding">5dp</dimen>
+    <dimen name="checkbox_min_width">70dp</dimen>
+
+    <dimen name="font_big">20sp</dimen>
+    <dimen name="font_middle">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+
+    <dimen name="overlay_line_width">3dp</dimen>
+
+    <dimen name="custom_info_window_offset_x">-27dp</dimen>
+    <dimen name="custom_info_window_offset_y">-9dp</dimen>
+
+    <dimen name="ic_delete">30dp</dimen>
+    <dimen name="padd_10">10dp</dimen>
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+</resources>

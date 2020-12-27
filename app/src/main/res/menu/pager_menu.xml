@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_24"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/exclusion_list"
+        android:icon="@drawable/ic_list_24"
+        android:title="@string/exclusion_list" />
+<!--    <item-->
+<!--        android:id="@+id/user"-->
+<!--        android:icon="@drawable/ic_person_24"-->
+<!--        android:title="@string/user" />-->
+</menu>
