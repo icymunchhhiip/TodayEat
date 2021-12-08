@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">TodayEat</string>
-    <string name="kakao">c85ba9762a7c89d99dfbd26687b1ebb8</string>
-    <string name="naver">m5yto5cy4p</string>
-    <string name="tmap">l7xx63ba66e222ac4b8dbaeaf28f687ae591</string>
+    <string name="kakao">YOUR_KAKAO_KEY</string>
+    <string name="naver">YOUR_NAVER_KEY</string>
+    <string name="tmap">YOUR_TMAP_KEY</string>
 
     <string name="search">검색</string>
     <string name="exclusion_list">제외 목록</string>
